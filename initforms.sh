@@ -35,7 +35,7 @@ FORM_PATH="${workdir}/formfile"
 
 ${SQLITE3_CMD} ${FORM_PATH}/${HELPER}.sqlite << EOF
 BEGIN TRANSACTION;
-INSERT INTO forms ( mytable,group_id,order_id,param,desc,def,cur,new,mandatory,attr,type,link,groupname ) VALUES ( 'forms', 1,1,'timezone','timezone: default is 'UTC'','UTC','','',1, 'maxlen=60', 'inputbox', 'timezone_autocomplete', '' );
+INSERT INTO forms ( mytable,group_id,order_id,param,desc,def,cur,new,mandatory,attr,type,link,groupname ) VALUES ( 'forms', 1,1,'timezone','timezone: default is "UTC"','UTC','','',1, 'maxlen=60', 'inputbox', 'timezone_autocomplete', '' );
 COMMIT;
 EOF
 
